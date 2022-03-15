@@ -26,8 +26,8 @@
         </a>
       </div>
     </nav>
-
-    <header class="flex flex-wrap pb-14 sm:pb-28">
+    <!-- Header -->
+    <header class="flex flex-col pb-14 sm:pb-28 sm:flex-row">
       <div class="header-image my-10 mx-6 sm:flex-1 sm:mt-6 sm:ml-24">
         <img src="/src/assets/images/header.jpg" alt="BEMM Logo" />
       </div>
@@ -37,7 +37,7 @@
           Bemm group staat voor de aan- en verkoop van kwalitatieve producten
           van internationale partners binnen Europa
         </p>
-        <div class="flex flex-wrap mt-6">
+        <div class="flex mt-6">
           <button class="rounded-full bg-white text-grey px-6 py-3">
             Maak een afspraak
           </button>
@@ -51,5 +51,47 @@
         </div>
       </div>
     </header>
+    <!-- BEMM cijfers -->
+    <main>
+      <section id="numbers">
+        <h2 class="text-center">BEMM in cijfers</h2>
+        <div
+          class="flex py-3 flex-col sm:flex-wrap sm:flex-row justify-between sm:px-24 sm:py-6"
+        >
+          <div class="text-center py-3">
+            <img
+              src="/src/assets/icons/reviews_gradient.svg"
+              class="h-16 mx-auto"
+            />
+            <h2>+2000</h2>
+            <span>Reviews</span>
+          </div>
+          <div class="text-center py-3">
+            <img
+              src="/src/assets/icons/wink_gradient.svg"
+              class="h-16 mx-auto"
+            />
+            <h2>9/10</h2>
+            <span>Gemiddelde beoordeling</span>
+          </div>
+          <div class="text-center py-3">
+            <img
+              src="/src/assets/icons/products_gradient.svg"
+              class="h-16 mx-auto"
+            />
+            <h2>+100</h2>
+            <span>Verschillende producten</span>
+          </div>
+          <div class="text-center py-3">
+            <img
+              src="/src/assets/icons/people_gradient.svg"
+              class="h-16 mx-auto"
+            />
+            <h2>+10.000</h2>
+            <span>Tevreden klanten</span>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
