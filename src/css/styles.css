@@ -12,5 +12,11 @@
     @apply leading-snug;
     @apply font-semibold;
   }
+  h3 {
+    @apply text-3xl;
+    @apply sm:text-4xl;
+    @apply leading-snug;
+    @apply font-semibold;
+  }
   /* ... */
 }
