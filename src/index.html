@@ -1,151 +1,274 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="/src/css/style.css" rel="stylesheet" />
-  </head>
-  <body class="text-white bg-darkgrey font-dm-sans w-full">
-    <nav class="bg-grey py-5 pl-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
-      <div>
-        <a href="#" class="flex items-center">
-          <img
-            src="/src/assets/images/logo.svg"
-            class="object-cover h-7 sm:h-10"
-            alt="Flowbite Logo"
-          />
-        </a>
-      </div>
-    </nav>
-    <!-- Header -->
-    <header class="flex flex-col pb-14 sm:pb-28 md:flex-row">
-      <div
-        class="header-image my-10 mx-6 sm:flex-1 sm:mt-6 sm:ml-24 flex items-center"
-      >
-        <img
-          src="/src/assets/images/header.jpg"
-          alt="BEMM Logo"
-          class="mx-auto max-h-96"
-        />
-      </div>
-      <div class="header-description mx-6 sm:flex-1 sm:mt-20 sm:pr-20">
-        <h2>Wij verdelen kwalitatieve producten binnen Europa</h2>
-        <p class="mt-6">
-          Bemm group staat voor de aan- en verkoop van kwalitatieve producten
-          van internationale partners binnen Europa
-        </p>
-        <div class="flex flex-wrap mt-6 sm:flex-row">
-          <button
-            class="rounded-full bg-white text-grey px-6 py-3 sm:hover:bg-opacity-80 sm:m-2"
-          >
-            Maak een afspraak
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+
+  <link href="/src/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="text-white bg-darkgrey font-dm-sans w-full">
+  <nav class="bg-grey py-5 pl-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
+    <div>
+      <a href="#" class="flex items-center">
+        <img src="/src/assets/images/logo.svg" class="object-cover h-7 sm:h-10" alt="Flowbite Logo" />
+      </a>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="flex flex-col pb-14 sm:pb-28 md:flex-row">
+    <div class="header-image my-10 mx-6 sm:flex-1 sm:mt-6 sm:ml-24 flex items-center">
+      <img src="/src/assets/images/header.jpg" alt="BEMM Logo" class="mx-auto max-h-96" />
+    </div>
+    <div class="header-description mx-6 sm:flex-1 sm:mt-20 sm:pr-20">
+      <h2>Wij verdelen kwalitatieve producten binnen Europa</h2>
+      <p class="mt-6">
+        Bemm group staat voor de aan- en verkoop van kwalitatieve producten
+        van internationale partners binnen Europa
+      </p>
+      <div class="flex flex-wrap mt-6 sm:flex-row">
+        <button class="rounded-full bg-white text-grey px-6 py-3 sm:hover:bg-opacity-80 sm:m-2">
+          Maak een afspraak
+        </button>
+        <div class="mt-4 p-0.5 bg-gradient-to-tr from-bemmblue to-bemmgreen rounded-full sm:m-2">
+          <button class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80">
+            Ontdek onze merken
           </button>
-          <div
-            class="mt-4 p-0.5 bg-gradient-to-tr from-bemmblue to-bemmgreen rounded-full sm:m-2"
-          >
-            <button
-              class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-grey"
-            >
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- BEMM cijfers -->
+  <main>
+    <section id="numbers">
+      <h2 class="text-center">BEMM in cijfers</h2>
+      <div class="flex py-3 mb-16 flex-col sm:flex-wrap sm:flex-row justify-around sm:px-24 sm:pt-6 sm:mb-20">
+        <div class="text-center py-3">
+          <img src="/src/assets/icons/reviews_gradient.svg" class="h-16 mx-auto" />
+          <h2>+2000</h2>
+          <span>Reviews</span>
+        </div>
+        <div class="text-center py-3">
+          <img src="/src/assets/icons/wink_gradient.svg" class="h-16 mx-auto" />
+          <h2>9/10</h2>
+          <span>Gemiddelde beoordeling</span>
+        </div>
+        <div class="text-center py-3">
+          <img src="/src/assets/icons/products_gradient.svg" class="h-16 mx-auto" />
+          <h2>+100</h2>
+          <span>Verschillende producten</span>
+        </div>
+        <div class="text-center py-3">
+          <img src="/src/assets/icons/people_gradient.svg" class="h-16 mx-auto" />
+          <h2>+10.000</h2>
+          <span>Tevreden klanten</span>
+        </div>
+      </div>
+    </section>
+    <!-- Why choose us -->
+    <section id="whychooseus" class="bg-white text-black px-6 sm:px-24">
+      <h2 class="text-center pt-14 pb-8 sm:pt-28 sm:pb-12">
+        Daarom kies je voor BEMM
+      </h2>
+      <div class="flex flex-col lg:flex-row items-center">
+        <img src="/src/assets/icons/world.svg" class="w-2/5 mx-6" />
+        <div class="flex flex-col sm:w-2/5 sm:mr-3">
+          <article>
+            <h3>Flexibiliteit in werking</h3>
+            <p>
+              Neque vitae aliquet semper lorem tempus lectus a varius nunc.
+              Eget imperdiet varius posuere sagittis. Vulputate dolor vitae
+              urna sed porttitor sit. Tellus.
+            </p>
+          </article>
+          <article>
+            <h3>Wij houden van feedback</h3>
+            <p>
+              Imperdiet integer convallis vel amet, dolor vitae consequat.
+              Enim gravida faucibus sagittis, aliquam condimentum interdum
+              amet, lorem nibh. Ornare.
+            </p>
+          </article>
+          <article>
+            <h3>Menselijke klantenbenadering</h3>
+            <p>
+              Donec suscipit et quisque cursus rhoncus ullamcorper volutpat.
+              Blandit adipiscing quam quam felis, lobortis accumsan. Faucibus
+              faucibus nunc.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button class="rounded-full w-fit bg-black text-white px-6 py-3 sm:hover:bg-opacity-80 sm:m-2">
+          Over BEMM
+        </button>
+      </div>
+    </section>
+    <!-- Brands -->
+    <section id="brands" class="bg-white text-black px-6 sm:px-24">
+      <h2 class="text-center pt-14 pb-8 sm:pt-28 sm:pb-12">Onze merken</h2>
+      <div class="flex flex-col items-center justify-center sm:flex-wrap sm:flex-row">
+        <a href="#" class="w-80 sm:w-96 m-6">
+          <div class="border-2 rounded-xl h-56">
+            <img src="/src/assets/images/brands/adler.jpg" class="mx-auto my-16" />
+          </div>
+        </a>
+        <a href="#" class="w-80 sm:w-96 m-6">
+          <div class="border-2 rounded-xl h-56">
+            <img src="/src/assets/images/brands/adler.jpg" class="mx-auto my-16" />
+          </div>
+        </a>
+        <a href="#" class="w-80 sm:w-96 m-6">
+          <div class="border-2 rounded-xl h-56">
+            <img src="/src/assets/images/brands/adler.jpg" class="mx-auto my-16" />
+          </div>
+        </a>
+        <a href="#" class="w-80 sm:w-96 m-6">
+          <div class="border-2 rounded-xl h-56">
+            <img src="/src/assets/images/brands/adler.jpg" class="mx-auto my-16" />
+          </div>
+        </a>
+        <div class="flex flex-col items-center border-2 rounded-xl w-80 sm:w-96 m-6 h-56 bg-slate-100">
+          <h3 class="text-center mt-14">Jouw merk hier?</h3>
+          <div class="mt-4 p-0.5 bg-gradient-to-tr from-bemmblue to-bemmgreen rounded-full sm:m-2">
+            <button class="rounded-full bg-white px-6 py-3 sm:hover:bg-opacity-80">
               Ontdek onze merken
             </button>
           </div>
         </div>
       </div>
-    </header>
-    <!-- BEMM cijfers -->
-    <main>
-      <section id="numbers">
-        <h2 class="text-center">BEMM in cijfers</h2>
-        <div
-          class="flex py-3 mb-16 flex-col sm:flex-wrap sm:flex-row justify-around sm:px-24 sm:pt-6 sm:mb-20"
-        >
-          <div class="text-center py-3">
-            <img
-              src="/src/assets/icons/reviews_gradient.svg"
-              class="h-16 mx-auto"
-            />
-            <h2>+2000</h2>
-            <span>Reviews</span>
-          </div>
-          <div class="text-center py-3">
-            <img
-              src="/src/assets/icons/wink_gradient.svg"
-              class="h-16 mx-auto"
-            />
-            <h2>9/10</h2>
-            <span>Gemiddelde beoordeling</span>
-          </div>
-          <div class="text-center py-3">
-            <img
-              src="/src/assets/icons/products_gradient.svg"
-              class="h-16 mx-auto"
-            />
-            <h2>+100</h2>
-            <span>Verschillende producten</span>
-          </div>
-          <div class="text-center py-3">
-            <img
-              src="/src/assets/icons/people_gradient.svg"
-              class="h-16 mx-auto"
-            />
-            <h2>+10.000</h2>
-            <span>Tevreden klanten</span>
+    </section>
+    <!-- Customers -->
+    <section id="customers" class="bg-white text-black px-6 pb-8 sm:px-24">
+      <h2 class="text-center pt-14 pb-8 sm:pt-28 sm:pb-12">
+        Tevreden klanten
+      </h2>
+      <div class="flex flex-col items-center justify-center lg:flex-wrap lg:flex-row">
+        <div class="flex flex-1 rounded-xl bg-slate-100 p-10 mb-4 sm:mx-4">
+          <span class="text-9xl text-bemmgreen">"</span>
+          <div class="mt-6 ml-4">
+            <p class="text-xl mb-6">
+              Tristique aenean vitae bibendum congue tortor. Sed vel varius
+              erat pellentesque enim diam felis. Pulvinar enim nec viverra
+              nulla penatibus hendrerit mauris.
+            </p>
+            <p>
+              Yasin Yavuz -
+              <span class="text-bemmgreen">Developer Strict</span>
+            </p>
           </div>
         </div>
-      </section>
-      <!-- Why choose us -->
-      <section id="whychooseus" class="bg-white text-black px-6 sm:px-24">
-        <h2 class="text-center pt-14 pb-8 sm:pt-28 sm:pb-12">
-          Daarom kies je voor BEMM
-        </h2>
-        <div class="flex flex-col sm:flex-row items-center">
-          <img
-            src="/src/assets/icons/world.svg"
-            class="w-3/5 py-6 sm:flex-1 sm:px-48"
-          />
-          <div class="flex flex-col justify-between sm:w-2/5 sm:mr-3 sm:flex-1">
-            <article>
-              <h3>Flexibiliteit in werking</h3>
-              <p>
-                Neque vitae aliquet semper lorem tempus lectus a varius nunc.
-                Eget imperdiet varius posuere sagittis. Vulputate dolor vitae
-                urna sed porttitor sit. Tellus.
-              </p>
-            </article>
-            <article>
-              <h3>Wij houden van feedback</h3>
-              <p>
-                Imperdiet integer convallis vel amet, dolor vitae consequat.
-                Enim gravida faucibus sagittis, aliquam condimentum interdum
-                amet, lorem nibh. Ornare.
-              </p>
-            </article>
-            <article>
-              <h3>Menselijke klantenbenadering</h3>
-              <p>
-                Donec suscipit et quisque cursus rhoncus ullamcorper volutpat.
-                Blandit adipiscing quam quam felis, lobortis accumsan. Faucibus
-                faucibus nunc.
-              </p>
-            </article>
+        <div class="flex flex-1 rounded-xl bg-slate-100 p-10 mb-4 sm:mx-4">
+          <span class="text-9xl text-bemmgreen">"</span>
+          <div class="mt-6 ml-4">
+            <p class="text-xl mb-6">
+              Tristique aenean vitae bibendum congue tortor. Sed vel varius
+              erat pellentesque enim diam felis.
+            </p>
+            <p>
+              Yasin Yavuz -
+              <span class="text-bemmgreen">Developer Strict</span>
+            </p>
           </div>
         </div>
-        <div class="flex justify-center mt-8">
-          <button
-            class="rounded-full w-fit bg-black text-white px-6 py-3 sm:hover:bg-opacity-80 sm:m-2"
-          >
-            Over BEMM
+      </div>
+      <!-- <div class="flex justify-center mt-8">
+          <div class="flex flex-wrap mt-6 sm:flex-row">
+            <button
+              class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80 sm:m-2"
+            >
+              Bekijk alle reviews
+            </button>
+            <div
+              class="mt-4 p-0.5 bg-gradient-to-tr from-bemmblue to-bemmgreen rounded-full sm:m-2"
+            >
+              <button
+                class="rounded-full bg-white text-black px-6 py-3 sm:hover:bg-opacity-80"
+              >
+                Ontdek onze merken
+              </button>
+            </div>
+          </div>
+        </div> -->
+    </section>
+    <section id="contact" class="px-6 pb-8 sm:px-80">
+      <h2 class="text-center text-3xl sm:text-5xl pt-14 pb-8 sm:pt-28 sm:pb-12">
+        Interesse om samen te werken met ons of heb je een vraag?
+      </h2>
+      <p class="text-center">
+        Donec suscipit et quisque cursus rhoncus ullamcorper volutpat. Blandit
+        adipiscing quam quam felis, lobortis accumsan. Faucibus faucibus nunc.
+      </p>
+      <div class="flex justify-center mt-8">
+        <div class="flex flex-col sm:flex-wrap mt-6 sm:flex-row">
+          <button class="rounded-full bg-white text-black px-6 py-3 sm:hover:bg-opacity-80 sm:m-2">
+            Contacteer ons
           </button>
+          <div class="mt-4 p-0.5 bg-gradient-to-tr from-bemmblue to-bemmgreen rounded-full sm:m-2">
+            <button class="rounded-full w-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80">
+              Bel ons
+            </button>
+          </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-white text-black px-6 pt-24 sm:px-24">
+    <div class="flex flex-col justify-between sm:flex-row">
+      <div class="mb-8">
+        <img src="/src/assets/images/bemmblack.svg" class="w-48" />
+        <div class="flex flex-col justify-around sm:flex-row"></div>
+      </div>
+      <div class="mb-8">
+        <h3 class="text-2xl mb-6">Sitemap</h3>
+        <div class="flex flex-col sm:flex-row sm:flex-wrap">
+          <div class="w-1/2 mb-4">
+            <a href="#">Merken</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Verdeelpunten</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Over ons</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Contact</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Reviews</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Nieuws</a href="#">
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="#">Veelgestelde vragen</a href="#">
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h3 class="text-2xl mb-6">Contacteer ons</h3>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/linkedin.svg" class="w-4" alt="">
+          <p class="ml-4">info@bemmgroup.com</p>
+        </div>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/linkedin.svg" class="w-4" alt="">
+          <p class="ml-4">0499 99 99 99</p>
+        </div>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/linkedin.svg" class="w-4" alt="">
+          <p class="ml-4">Lochtemanweg 96 Bus 10 <br>
+            3550 Heusden Zolder</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
