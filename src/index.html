@@ -9,17 +9,84 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
 
-  <link href="/src/css/style.css" rel="stylesheet" />
+  <link href="/src/css/style.css?v=1" rel="stylesheet" />
 </head>
 
 <body class="text-white bg-darkgrey font-dm-sans w-full">
-  <nav class="bg-grey py-5 pl-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
-    <div>
-      <a href="#" class="flex items-center">
-        <img src="/src/assets/images/logo.svg" class="object-cover h-7 sm:h-10" alt="Flowbite Logo" />
-      </a>
+  <nav class="bg-grey py-5 px-6 sm:py-8 sm:pl-24 md:bg-darkgrey ">
+    <div class="container ">
+      <div class="flex justify-between items-center ">
+        <a href="#" class="flex items-center">
+          <img src="/src/assets/images/logo.svg" class="object-cover h-7 sm:h-10" alt="Flowbite Logo" />
+        </a>
+        <div class="hidden md:flex items-center space-x-1">
+          <!-- Desktop Menu -->
+          <ul class="flex flex-col sm:flex-row sm:items-center">
+            <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Merken</a></li>
+            <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Verdeelpunten</a></li>
+            <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Over BEMM</a></li>
+            <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Contact</a></li>
+            <!-- <li><button class=" bg-white text-black rounded-full px-6 py-3 font-bold ">Chat met ons</button></li> -->
+          </ul>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button p-4">
+            <svg class="h-6 w-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="209px" height="177px" viewBox="0 0 209 177"
+              style="overflow:visible;enable-background:new 0 0 209 177;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: none;
+                  stroke: #FFFFFF;
+                  stroke-width: 20;
+                  stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                  fill: none;
+                  stroke: #48EA9C;
+                  stroke-width: 20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+              <defs>
+              </defs>
+              <line class="st0" x1="0" y1="10" x2="209" y2="10" />
+              <line class="st0" x1="0" y1="167" x2="209" y2="167" />
+              <line class="st1" x1="74" y1="88.5" x2="209" y2="88.5" />
+            </svg>
+            
+          </button>
+        </div>
+      </div>
+      <div class="hidden mobile-menu mt-4 ">
+        <ul class="flex flex-col justify-around m-0 text-center">
+          <li><a href="#">
+              <div class="text-xl m-2 py-4">Merken</div>
+            </a></li>
+          <li><a href="#">
+              <div class="text-xl m-2 py-4">Verdeelpunten</div>
+            </a></li>
+          <li><a href="#">
+              <div class="text-xl m-2 py-4">Over BEMM</div>
+            </a></li>
+          <li><a href="#">
+              <div class="text-xl m-2 py-4">Contact</div>
+            </a></li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
     </div>
   </nav>
+
+
   <!-- Header -->
   <header class="flex flex-col pb-14 sm:pb-28 md:flex-row">
     <div class="header-image my-10 mx-6 sm:flex-1 sm:mt-6 sm:ml-24 flex items-center">
