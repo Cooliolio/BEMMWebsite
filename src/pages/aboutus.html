@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/css/style.css?v=2" rel="stylesheet" />
+
+    <title>Over BEMM</title>
+  </head>
+  <body class="font-dm-sans w-full">
+    <!-- Nav Bar -->
+
+    <nav class="bg-grey text-white py-5 px-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <a href="../index.html" class="flex items-center">
+            <img
+              src="/src/assets/images/logo.svg"
+              class="object-cover h-7 sm:h-10"
+              alt="BEMM Logo"
+            />
+          </a>
+          <div class="hidden md:flex items-center space-x-1">
+            <!-- Desktop Menu -->
+            <ul class="flex flex-col sm:flex-row sm:items-center">
+              <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Merken</a></li>
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="#">Verdeelpunten</a>
+              </li>
+              <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Over BEMM</a></li>
+              <li class="mt-2 sm:mx-5 sm:mt-0"><a href="#">Contact</a></li>
+              <!-- <li><button class=" bg-white text-black rounded-full px-6 py-3 font-bold ">Chat met ons</button></li> -->
+            </ul>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button p-4">
+              <svg
+                class="h-6 w-6"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="209px"
+                height="177px"
+                viewBox="0 0 209 177"
+                style="overflow: visible; enable-background: new 0 0 209 177"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-width: 20;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st1 {
+                    fill: none;
+                    stroke: #48ea9c;
+                    stroke-width: 20;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <defs></defs>
+                <line class="st0" x1="0" y1="10" x2="209" y2="10" />
+                <line class="st0" x1="0" y1="167" x2="209" y2="167" />
+                <line class="st1" x1="74" y1="88.5" x2="209" y2="88.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden mobile-menu mt-4">
+          <ul class="flex flex-col justify-around m-0 text-center">
+            <li>
+              <a href="#">
+                <div class="text-xl m-2 py-4">Merken</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text-xl m-2 py-4">Verdeelpunten</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text-xl m-2 py-4">Over BEMM</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text-xl m-2 py-4">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </div>
+    </nav>
+
+    <!-- Photo Header -->
+    <header class="bg-aboutus-cover text-white">
+      <div class="bg-darkgrey/50 w-full px-8 pt-36 pb-12 sm:px-24 sm:py-52">
+        <h2>Over ons</h2>
+        <p class="lg:mr-96">
+          Sit et dignissim eu, quis tincidunt blandit et malesuada. Nulla arcu
+          iaculis sagittis, nunc varius tellus magnis ipsum interdum. Amet.
+        </p>
+      </div>
+    </header>
+    <section id="text" class="bg-white text-black px-6 py-14 lg:px-52 lg:py-24">
+      <p class="font-bold mb-14 md:mb-24">
+        Lectus viverra ornare luctus aliquam, nunc habitasse sed. Consectetur
+        nam viverra malesuada ultrices mattis maecenas proin blandit volutpat.
+        Amet, auctor eu id turpis aliquet auctor. Ac lobortis lectus sit
+        sollicitudin. Lectus condimentum nisl massa mattis lectus maecenas
+        ultrices facilisi donec. Ultrices ornare a dignissim turpis aliquam.
+        Pellentesque nibh condimentum dui velit vitae nec curabitur et
+        suspendisse. Consequat iaculis consectetur tempus, vel aliquam proin
+        aliquam dolor. Tincidunt vulputate tellus praesent pellentesque. Posuere
+        elementum proin suscipit nec dapibus.
+      </p>
+      <h2 class="text-3xl md:text-4xl mb-4 md:mb-6">
+        Wij zijn experten in verkoop
+      </h2>
+      <p>
+        Donec lobortis euismod fermentum maecenas porttitor placerat vitae id
+        arcu. Viverra amet odio ipsum, orci massa est. Mauris suspendisse
+        elementum sit pellentesque lectus sed dictum. At viverra aenean id purus
+        suspendisse vitae. Amet quis consequat, maecenas risus etiam suspendisse
+        euismod. Facilisi porttitor sagittis etiam venenatis amet. Donec ipsum,
+        malesuada in sodales vitae aliquam amet in cras. Penatibus morbi in est
+        sed integer curabitur fringilla. Aliquet nulla ut tortor quam porta
+        penatibus at. Sagittis, egestas dignissim odio adipiscing risus ut sed
+        lectus purus. Vulputate est mus dictum at malesuada enim est.
+      </p>
+    </section>
+    <section class="px-6 lg:px-24">
+      <div class="flex flex-col md:flex-row items-center">
+        <img src="/src/assets/icons/world.svg" class="w-2/5 mx-6 my-4" />
+        <div class="flex flex-col sm:w-2/5 sm:mr-3">
+          <article>
+            <h3>Flexibiliteit in werking</h3>
+            <p>
+              Neque vitae aliquet semper lorem tempus lectus a varius nunc. Eget
+              imperdiet varius posuere sagittis. Vulputate dolor vitae urna sed
+              porttitor sit. Tellus.
+            </p>
+          </article>
+          <article>
+            <h3>Wij houden van feedback</h3>
+            <p>
+              Imperdiet integer convallis vel amet, dolor vitae consequat. Enim
+              gravida faucibus sagittis, aliquam condimentum interdum amet,
+              lorem nibh. Ornare.
+            </p>
+          </article>
+          <article>
+            <h3>Menselijke klantenbenadering</h3>
+            <p>
+              Donec suscipit et quisque cursus rhoncus ullamcorper volutpat.
+              Blandit adipiscing quam quam felis, lobortis accumsan. Faucibus
+              faucibus nunc.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="px-6 py-14 lg:px-24 lg:py-24">
+      <div class="flex flex-wrap justify-around">
+        <!-- Profile -->
+        <div
+          class="flex flex-col w-full sm:w-72 text-center bg-darkgrey text-white rounded-md items-center py-10 px-9"
+        >
+          <div class="border border-bemmgreen p-2 rounded-full">
+            <div class="border-2 border-bemmgreen rounded-full">
+              <img
+                src="/src/assets/images/header.jpg"
+                alt=""
+                class="rounded-full object-cover w-28 h-28"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col my-4">
+            <span class="text-xl font-bold">John Doe</span>
+            <span class="text-lg text-bemmgreen">Co-Founder</span>
+          </div>
+          <p class="text-lg">
+            Convallis diam massa auctor netus sit auctor eros, tincidunt et. Sit
+            habitasse id vitae venenatis ut. Volutpat massa, tincidunt vitae,
+            pellentesque fames turpis suspendisse
+          </p>
+          <div class="mt-4 flex justify-around">
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+          </div>
+        </div>
+        <!-- Profile -->
+        <div
+          class="flex flex-col w-full sm:w-72 text-center bg-darkgrey text-white rounded-md items-center py-10 px-9"
+        >
+          <div class="border border-bemmgreen p-2 rounded-full">
+            <div class="border-2 border-bemmgreen rounded-full">
+              <img
+                src="/src/assets/images/header.jpg"
+                alt=""
+                class="rounded-full object-cover w-28 h-28"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col my-4">
+            <span class="text-xl font-bold">John Doe</span>
+            <span class="text-lg text-bemmgreen">Co-Founder</span>
+          </div>
+          <p class="text-lg">
+            Convallis diam massa auctor netus sit auctor eros, tincidunt et. Sit
+            habitasse id vitae venenatis ut. Volutpat massa, tincidunt vitae,
+            pellentesque fames turpis suspendisse
+          </p>
+          <div class="mt-4 flex justify-around">
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+          </div>
+        </div>
+        <!-- Profile -->
+        <div
+          class="flex flex-col w-full sm:w-72 text-center bg-darkgrey text-white rounded-md items-center py-10 px-9"
+        >
+          <div class="border border-bemmgreen p-2 rounded-full">
+            <div class="border-2 border-bemmgreen rounded-full">
+              <img
+                src="/src/assets/images/header.jpg"
+                alt=""
+                class="rounded-full object-cover w-28 h-28"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col my-4">
+            <span class="text-xl font-bold">John Doe</span>
+            <span class="text-lg text-bemmgreen">Co-Founder</span>
+          </div>
+          <p class="text-lg">
+            Convallis diam massa auctor netus sit auctor eros, tincidunt et. Sit
+            habitasse id vitae venenatis ut. Volutpat massa, tincidunt vitae,
+            pellentesque fames turpis suspendisse
+          </p>
+          <div class="mt-4 flex justify-around">
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+          </div>
+        </div>
+        <!-- Profile -->
+        <div
+          class="flex flex-col w-full sm:w-72 text-center bg-darkgrey text-white rounded-md items-center py-10 px-9"
+        >
+          <div class="border border-bemmgreen p-2 rounded-full">
+            <div class="border-2 border-bemmgreen rounded-full">
+              <img
+                src="/src/assets/images/header.jpg"
+                alt=""
+                class="rounded-full object-cover w-28 h-28"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col my-4">
+            <span class="text-xl font-bold">John Doe</span>
+            <span class="text-lg text-bemmgreen">Co-Founder</span>
+          </div>
+          <p class="text-lg">
+            Convallis diam massa auctor netus sit auctor eros, tincidunt et. Sit
+            habitasse id vitae venenatis ut. Volutpat massa, tincidunt vitae,
+            pellentesque fames turpis suspendisse
+          </p>
+          <div class="mt-4 flex justify-around">
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+            <button
+              class="w-12 h-12 bg-white flex items-center rounded-full mx-2"
+            >
+              <img src="/src/assets/icons/facebook.svg" alt="" class="p-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

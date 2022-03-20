@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/*.{html,js}"],
+  content: ["./src/*.{html,js}", "./src/pages/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -13,6 +13,11 @@ module.exports = {
       },
       width: {
         "30p": "30%",
+      },
+      backgroundImage: {
+        "aboutus-cover":
+          "url('/src/assets/images/backgrounds/aboutus-cover.jpg')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
     },
   },
