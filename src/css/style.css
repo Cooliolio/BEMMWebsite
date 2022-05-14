@@ -1270,4 +1270,9 @@ h3 {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
