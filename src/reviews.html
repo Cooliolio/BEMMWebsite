@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/css/style.css?v=8" rel="stylesheet" />
+
+    <title>Reviews</title>
+  </head>
+  <body class="font-dm-sans w-full">
+    <!-- Nav Bar -->
+    <nav class="bg-grey text-white py-5 px-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
+      <div>
+        <div class="flex justify-between items-center">
+          <a href="/" class="flex items-center">
+            <img
+              src="/src/assets/images/logo.svg"
+              class="object-cover h-7 sm:h-10"
+              alt="BEMM Logo"
+            />
+          </a>
+          <div class="hidden md:flex items-center space-x-1">
+            <!-- Desktop Menu -->
+            <ul class="flex flex-col sm:flex-row sm:items-center">
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="brands.html">Merken</a>
+              </li>
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="aboutus.html">Over BEMM</a>
+              </li>
+              <!-- <li>
+              <a href="contact.html">
+                <div class="text-xl m-2 py-4">Contact</div>
+              </a>
+            </li> -->
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="verdeelpunten.html">Verdeelpunten</a>
+              </li>
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="reviews.html">Reviews</a>
+              </li>
+              <!-- <li><button class=" bg-white text-black rounded-full px-6 py-3 font-bold ">Chat met ons</button></li> -->
+            </ul>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button p-4">
+              <svg
+                class="h-6 w-6"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="209px"
+                height="177px"
+                viewBox="0 0 209 177"
+                style="overflow: visible; enable-background: new 0 0 209 177"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-width: 20;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st1 {
+                    fill: none;
+                    stroke: #48ea9c;
+                    stroke-width: 20;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <defs></defs>
+                <line class="st0" x1="0" y1="10" x2="209" y2="10" />
+                <line class="st0" x1="0" y1="167" x2="209" y2="167" />
+                <line class="st1" x1="74" y1="88.5" x2="209" y2="88.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden mobile-menu mt-4">
+          <ul class="flex flex-col justify-around m-0 text-center">
+            <li>
+              <a href="brands.html">
+                <div class="text-xl m-2 py-4">Merken</div>
+              </a>
+            </li>
+            <li>
+              <a href="aboutus.html">
+                <div class="text-xl m-2 py-4">Over BEMM</div>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="contact.html">
+                <div class="text-xl m-2 py-4">Contact</div>
+              </a>
+            </li> -->
+            <li>
+              <a href="verdeelpunten.html">
+                <div class="text-xl m-2 py-4">Verdeelpunten</div>
+              </a>
+            </li>
+            <li>
+              <a href="reviews.html">
+                <div class="text-xl m-2 py-4">Reviews</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </div>
+    </nav>
+
+    <!-- Photo Header -->
+    <header class="bg-aboutus-cover text-white">
+      <div class="bg-darkgrey/50 w-full px-8 pt-36 pb-12 sm:px-24 sm:py-52">
+        <h2>Reviews</h2>
+      </div>
+    </header>
+    <section id="text" class="bg-white text-black px-6 py-8 lg:px-52 lg:py-16">
+      <div>
+        <h2 class="text-3xl md:text-4xl mb-4 md:mb-6">
+          Het belang van reviews
+        </h2>
+        <p>
+          Productreviews kunnen voor BEMM Group bijzonder waardevol en nuttig
+          zijn. Via productreviews krijgen wij vaak interessante inzichten,
+          zoals informatie die ontbreekt of onjuist is op Bol.com. Dankzij de
+          hulp van productreviews kunnen wij,BEMM Group, maar ook Bol.com, de
+          geboden productinformatie verbeteren. Een goede productreview
+          beschrijft de ervaring met het product, ongeacht of het positief of
+          negatief is. Daarnaast geeft een goede review je mening weer door
+          middel van de beoordeling en de uitleg waarom je 1-5 ster(ren) hebt
+          gegeven. De uitleg bespreekt o.a. de kenmerken van een product of
+          specificaties, de werking (functionaliteit) en de ervaren kwaliteit.
+          Hoe meer goede of positieve productreviews, hoe meer dit in ons
+          voordeel zal spelen.
+        </p>
+        <br />
+        <p>
+          In totaal hebben wij een <b>algemeen oordeel van 9,1</b>. BEMM Group
+          scoort nooit een score onder de 9. Dit toont aan dat de klanten
+          tevreden zijn over ons als bedrijf. We kunnen dus concluderen dat wij,
+          BEMM Group, uitstekende beoordelingen hebben. Onder de beoordelingen
+          horen de volgende aspecten: productinformatie, levertijd, bezorging en
+          contact.
+        </p>
+
+        <br />
+        <p>
+          Negatieve feedback is inbegrepen in de 9.1/10 klantenbeoordeling. Dit
+          is een uitstekende kans om kritische verbeteringen aan te brengen aan
+          onze goederen en diensten. Op die manier kunnen we onze consumenten
+          een betere service geven en vermijden dat we dezelfde moeilijkheden
+          herhalen.
+        </p>
+        <br />
+        <div class="w-64">
+          <!-- Button -->
+          <a href="https://www.bol.com/be/nl/v/bemm/1442625/#ratings">
+            <div
+              class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80 text-center"
+            >
+              Bekijk ons profiel op Bol.com
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Customers -->
+    <section id="customers" class="bg-darkgrey text-black px-6 pb-8 sm:px-24">
+      <h2 class="text-center text-white pt-7 pb-8 sm:pt-14 sm:pb-12">
+        Reviews
+      </h2>
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-1 rounded-xl bg-slate-100 p-10 mb-8 sm:mx-12">
+          <span class="text-9xl text-bemmgreen">"</span>
+          <div class="mt-6 ml-4">
+            <h4 class="text-3xl font-bold">Londema</h4>
+            <h5 class="text-xl mb-2">
+              Haardroger - Ion technologie - Fohn met diffuser - 2200W
+            </h5>
+            <div class="w-16 mb-2 flex flex-row">
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+            </div>
+            <p class="text-xl mb-6">
+              Super goede haardroger, snoer is naar mijn mening lang genoeg.
+              Goede krachtige fohn, verschillende warmtestanden en
+              snelheidsstanden ook koude fohn mogelijk. De diffuser is groot en
+              goed, vooral fijn om krullen te creëren als je lang haar hebt. Er
+              zit zelfs een flesje heatprotection arganolie bij. Product was
+              uitstekend verpakt.
+            </p>
+            <a
+              href="https://www.bol.com/be/nl/p/haardroger-fohn-ion-technologie-fohn-met-diffuser-2200w-haarfohn/9300000100651103/?bltgh=hujmwqO2ov-mOMpFBRRHvg.2_6.7.ProductTitle"
+            >
+              <div
+                class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80 text-center"
+              >
+                Product bekijken
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-1 rounded-xl bg-slate-100 p-10 mb-8 sm:mx-12">
+          <span class="text-9xl text-bemmgreen">"</span>
+          <div class="mt-6 ml-4">
+            <h4 class="text-3xl font-bold">Julliorest</h4>
+            <h5 class="text-xl mb-2">
+              Wafelijzer - Wafelmaker - 1600W – Zwart
+            </h5>
+            <div class="w-16 mb-2 flex flex-row">
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+            </div>
+            <p class="text-xl mb-6">
+              Voor deze prijs is het een professioneel wafelijzer. Kinderen zijn
+              altijd blij met de gebakken wafels die altijd heel snel klaar zijn
+              en achteraf is het voor mij ook heel makkelijk om de wafelijzer
+              schoon te maken!
+            </p>
+            <a
+              href="https://www.bol.com/be/nl/p/wafelijzer-wafelmaker-1600w-zwart/9300000071373499/?bltgh=uSL8RIT8Z0btdajSwzBBsA.2_6.7.ProductTitle"
+            >
+              <div
+                class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80 text-center"
+              >
+                Product bekijken
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-1 rounded-xl bg-slate-100 p-10 mb-8 sm:mx-12">
+          <span class="text-9xl text-bemmgreen">"</span>
+          <div class="mt-6 ml-4">
+            <h4 class="text-3xl font-bold">McMarcello</h4>
+            <h5 class="text-xl mb-2">
+              Staafmixer - Mixer - 300W - Wit - Mixer handmixer
+            </h5>
+            <div class="w-16 mb-2 flex flex-row">
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+              <img class="w-1/2 mr-1" src="assets/icons/star.svg" alt="" />
+            </div>
+            <p class="text-xl mb-6">
+              Online met spoed een staafmixer voor mijn moeder besteld. Kort
+              daarna werd de staafmixer afgeprijsd. Na overleg zou ik het
+              verschil terugkrijgen. Echter na intern overleg is besloten om ons
+              de staafmixer geheel kosteloos te schenken. Dit omdat mijn moeder
+              vanwege haar ziekte thuiszorg heeft en er dringend behoefte was
+              aan een staafmixer.
+            </p>
+            <a
+              href="https://www.bol.com/be/nl/p/mixer-handmixer-mixer-handmixer-300w-staafmixer-rood/9300000052369675/?bltgh=qohRkO-WXmgZugqR77lBlw.2_6.7.ProductTitle"
+            >
+              <div
+                class="rounded-full bg-darkgrey text-white px-6 py-3 sm:hover:bg-opacity-80 text-center"
+              >
+                Product bekijken
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white text-black px-6 pt-24 sm:px-24">
+      <div class="flex flex-col justify-between sm:flex-row">
+        <div class="mb-8">
+          <img src="/src/assets/images/bemmblack.svg" class="w-48" />
+          <div class="flex flex-col justify-around sm:flex-row"></div>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-2xl mb-6">Sitemap</h3>
+          <div class="flex flex-col sm:flex-row sm:flex-wrap">
+            <div class="w-1/2 mb-4">
+              <a href="brands.html">Merken</a>
+            </div>
+            <div class="w-1/2 mb-4">
+              <a href="aboutus.html">Over ons</a>
+            </div>
+            <!-- <div class="w-1/2 mb-4">
+              <a href="contact.html">Contact</a>
+            </div> -->
+            <div class="w-1/2 mb-4">
+              <a href="reviews.html">Reviews</a>
+            </div>
+            <div class="w-1/2 mb-4">
+              <a href="verdeelpunten.html">Verdeelpunten</a>
+            </div>
+          </div>
+        </div>
+        <div class="mb-8">
+          <h3 class="text-2xl mb-6">Contacteer ons</h3>
+          <div class="flex mb-4">
+            <img src="/src/assets/icons/email.svg" class="w-4" alt="" />
+            <p class="ml-4">
+              <a href="mailto:info@bemmgroup.com">info@bemmgroup.com</a>
+            </p>
+          </div>
+          <div class="flex mb-4">
+            <img src="/src/assets/icons/phone-outline.svg" class="w-4" alt="" />
+            <p class="ml-4"><a href="callto:011 45 50 53">011 45 50 53</a></p>
+          </div>
+          <div class="flex mb-4">
+            <img src="/src/assets/icons/location-pin.svg" class="w-4" alt="" />
+            <p class="ml-4">
+              <a
+                href="https://www.google.com/maps/place/BEMM/@51.0313098,5.2300688,17z/data=!3m1!4b1!4m5!3m4!1s0x47c13b3a83393531:0x4ba68c2c7db8d83b!8m2!3d51.0313098!4d5.2322575"
+                >Lochtemanweg 96 Bus 10 <br />
+                3550 Heusden Zolder</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
