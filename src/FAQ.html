@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+
+  <link href="/src/css/style.css?v=9" rel="stylesheet" />
+
+  <style>
+    /* Tab content - closed */
+    .tab-content {
+    max-height: 0;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    }
+    /* :checked - resize to full height */
+    .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+    }
+    /* Label formatting when open */
+    .tab input:checked + label{
+    /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
+    font-size: 1.25rem; /*.text-xl*/
+    padding: 1.25rem; /*.p-5*/
+    border-left-width: 2px; /*.border-l-2*/
+    border-color: #6574cd; /*.border-indigo*/
+    background-color: #f8fafc; /*.bg-gray-100 */
+    color: #6574cd; /*.text-indigo*/
+    }
+    /* Icon */
+    .tab label::after {
+    float:right;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    }
+    /* Icon formatting - closed */
+    .tab input[type=checkbox] + label::after {
+    content: "+";
+    font-weight:bold; /*.font-bold*/
+    border-width: 1px; /*.border*/
+    border-radius: 9999px; /*.rounded-full */
+    border-color: #b8c2cc; /*.border-grey*/
+    }
+    .tab input[type=radio] + label::after {
+    content: "\25BE";
+    font-weight:bold; /*.font-bold*/
+    border-width: 1px; /*.border*/
+    border-radius: 9999px; /*.rounded-full */
+    border-color: #b8c2cc; /*.border-grey*/
+    }
+    /* Icon formatting - open */
+    .tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+    background-color: #6574cd; /*.bg-indigo*/
+    color: #f8fafc; /*.text-grey-lightest*/
+    }
+    .tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+    background-color: #6574cd; /*.bg-indigo*/
+    color: #f8fafc; /*.text-grey-lightest*/
+    }
+ </style>
+</head>
+
+<body class="font-dm-sans w-full">
+  <!-- Nav Bar -->
+  <nav class="bg-grey text-white py-5 px-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
+    <div>
+      <div class="flex justify-between items-center">
+        <a href="/" class="flex items-center">
+          <img
+            src="/src/assets/images/logo.svg"
+            class="object-cover h-7 sm:h-10"
+            alt="BEMM Logo"
+          />
+        </a>
+        <div class="hidden md:flex items-center space-x-1">
+          <!-- Desktop Menu -->
+          <ul class="flex flex-col sm:flex-row sm:items-center">
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="brands.html">Merken</a>
+            </li>
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="aboutus.html">Over BEMM</a>
+            </li>
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="verdeelpunten.html">Verdeelpunten</a>
+            </li>
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="reviews.html">Reviews</a>
+            </li>
+            <li class="mt-2 sm:mx-5 sm:mt-0">
+              <a href="FAQ.html">FAQ</a>
+            </li>
+            <!-- <li><button class=" bg-white text-black rounded-full px-6 py-3 font-bold ">Chat met ons</button></li> -->
+          </ul>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button p-4">
+            <svg
+              class="h-6 w-6"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="209px"
+              height="177px"
+              viewBox="0 0 209 177"
+              style="overflow: visible; enable-background: new 0 0 209 177"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-width: 20;
+                  stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                  fill: none;
+                  stroke: #48ea9c;
+                  stroke-width: 20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+              <defs></defs>
+              <line class="st0" x1="0" y1="10" x2="209" y2="10" />
+              <line class="st0" x1="0" y1="167" x2="209" y2="167" />
+              <line class="st1" x1="74" y1="88.5" x2="209" y2="88.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="hidden mobile-menu mt-4">
+        <ul class="flex flex-col justify-around m-0 text-center">
+          <li>
+            <a href="brands.html">
+              <div class="text-xl m-2 py-4">Merken</div>
+            </a>
+          </li>
+          <li>
+            <a href="aboutus.html">
+              <div class="text-xl m-2 py-4">Over BEMM</div>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <div class="text-xl m-2 py-4">Contact</div>
+            </a>
+          </li>
+          <li>
+            <a href="verdeelpunten.html">
+              <div class="text-xl m-2 py-4">Verdeelpunten</div>
+            </a>
+          </li>
+          <li>
+            <a href="reviews.html">
+              <div class="text-xl m-2 py-4">Reviews</div>
+            </a>
+          </li>
+          <li>
+            <a href="FAQ.html">
+              <div class="text-xl m-2 py-4">FAQ</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </div>
+  </nav>
+
+  <!-- Photo Header -->
+  <header class="bg-aboutus-cover text-white">
+    <div class="bg-darkgrey/50 w-full px-8 pt-36 pb-12 sm:px-24 sm:py-52">
+      <h2>Veelgestelde vragen</h2>
+    </div>
+  </header>
+
+  <section id="nav-FAQ-items" class="mx-6 sm:mx-24 md:flex md:justify-center">
+    <div class="align-top items-center mt-6 md:h-full md:m-20 inline-block">  
+      <div class="max-w-sm">
+        <div class="px-6 py-4">
+          <span class="flex items-center mb-1">
+            <p class="text-bemmgreen"><a href="a">Algemeen</a></p>
+          </span>
+          <span class="flex items-center mb-1">
+            <a href="a">Adler</a>
+          </span>
+          <span class="flex items-start">
+            <a href="a">ECG</a>
+          </span>
+          <span class="flex items-start">
+            <p><a href="a">Sody</a></p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="inline-block my-6 md:m-20 md:flex-1">
+        <h3>Algemeen</h3>
+         <div>
+            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
+               <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label One</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
+               <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label Two</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
+               <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Label Three</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-black px-6 pt-24 sm:px-24">
+    <div class="flex flex-col justify-between sm:flex-row">
+      <div class="mb-8">
+        <img src="/src/assets/images/bemmblack.svg" class="w-48" />
+        <div class="flex flex-col justify-around sm:flex-row"></div>
+      </div>
+      <div class="mb-8">
+        <h3 class="text-2xl mb-6">Sitemap</h3>
+        <div class="flex flex-col sm:flex-row sm:flex-wrap">
+          <div class="w-1/2 mb-4">
+            <a href="brands.html">Merken</a>
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="aboutus.html">Over ons</a>
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="reviews.html">Reviews</a>
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="verdeelpunten.html">Verdeelpunten</a>
+          </div>
+          <div class="w-1/2 mb-4">
+            <a href="FAQ.html">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8">
+        <h3 class="text-2xl mb-6">Contacteer ons</h3>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/email.svg" class="w-4" alt="" />
+          <p class="ml-4">
+            <a href="mailto:info@bemmgroup.com">info@bemmgroup.com</a>
+          </p>
+        </div>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/phone-outline.svg" class="w-4" alt="" />
+          <p class="ml-4"><a href="callto:011 45 50 53">011 45 50 53</a></p>
+        </div>
+        <div class="flex mb-4">
+          <img src="/src/assets/icons/location-pin.svg" class="w-4" alt="" />
+          <p class="ml-4">
+            <a
+              href="https://www.google.com/maps/place/BEMM/@51.0313098,5.2300688,17z/data=!3m1!4b1!4m5!3m4!1s0x47c13b3a83393531:0x4ba68c2c7db8d83b!8m2!3d51.0313098!4d5.2322575">Lochtemanweg
+              96 Bus 10 <br />
+              3550 Heusden Zolder</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
