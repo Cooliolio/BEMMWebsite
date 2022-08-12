@@ -12,67 +12,58 @@
   <link href="/src/css/style.css?v=9" rel="stylesheet" />
 
   <style>
+    .tab label {
+    background: linear-gradient(to right, #17CFC4 0%, #48EA9C 100%);
+    font-size: larger;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+    }
     /* Tab content - closed */
     .tab-content {
     max-height: 0;
-    -webkit-transition: max-height .35s;
-    -o-transition: max-height .35s;
-    transition: max-height .35s;
+    color: #000;
     }
     /* :checked - resize to full height */
     .tab input:checked ~ .tab-content {
     max-height: 100vh;
     }
-    /* Label formatting when open */
-    .tab input:checked + label{
-    /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
-    font-size: 1.25rem; /*.text-xl*/
-    padding: 1.25rem; /*.p-5*/
-    border-left-width: 2px; /*.border-l-2*/
-    border-color: #6574cd; /*.border-indigo*/
-    background-color: #f8fafc; /*.bg-gray-100 */
-    color: #6574cd; /*.text-indigo*/
-    }
     /* Icon */
     .tab label::after {
-    float:right;
+    float: right;
     right: 0;
     top: 0;
     display: block;
     width: 1.5em;
     height: 1.5em;
-    line-height: 1.5;
+    line-height: 1.3;
     font-size: 1.25rem;
     text-align: center;
-    -webkit-transition: all .35s;
-    -o-transition: all .35s;
-    transition: all .35s;
     }
     /* Icon formatting - closed */
     .tab input[type=checkbox] + label::after {
     content: "+";
-    font-weight:bold; /*.font-bold*/
-    border-width: 1px; /*.border*/
+	  -webkit-text-fill-color: #000;
+    font-weight: bold; /*.font-bold*/
+    background: 
+        linear-gradient(rgb(243 244 246), rgb(243 244 246)) padding-box,
+        linear-gradient(to bottom, #17CFC4, #48EA9C) border-box;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px;
     border-radius: 9999px; /*.rounded-full */
-    border-color: #b8c2cc; /*.border-grey*/
-    }
-    .tab input[type=radio] + label::after {
-    content: "\25BE";
-    font-weight:bold; /*.font-bold*/
-    border-width: 1px; /*.border*/
-    border-radius: 9999px; /*.rounded-full */
-    border-color: #b8c2cc; /*.border-grey*/
     }
     /* Icon formatting - open */
     .tab input[type=checkbox]:checked + label::after {
-    transform: rotate(315deg);
-    background-color: #6574cd; /*.bg-indigo*/
-    color: #f8fafc; /*.text-grey-lightest*/
-    }
-    .tab input[type=radio]:checked + label::after {
-    transform: rotateX(180deg);
-    background-color: #6574cd; /*.bg-indigo*/
-    color: #f8fafc; /*.text-grey-lightest*/
+      content: "-";
+	    -webkit-text-fill-color: #000;
+      font-weight: bold; /*.font-bold*/
+      background: 
+        linear-gradient(rgb(243 244 246), rgb(243 244 246)) padding-box,
+        linear-gradient(to bottom, #17CFC4, #48EA9C) border-box;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 9999px; /*.rounded-full */
     }
  </style>
 </head>
@@ -208,46 +199,90 @@
       <div class="max-w-sm">
         <div class="px-6 py-4">
           <span class="flex items-center mb-1">
-            <p class="text-bemmgreen"><a href="a">Algemeen</a></p>
+            <p class="text-bemmgreen"><a href="#artikel-retourneren">Artikel Retourneren</a></p>
           </span>
           <span class="flex items-center mb-1">
-            <a href="a">Adler</a>
+            <a href="#defect-product">Defect product</a>
           </span>
           <span class="flex items-start">
-            <a href="a">ECG</a>
+            <a href="#bezorging">Bezorging</a>
           </span>
           <span class="flex items-start">
-            <p><a href="a">Sody</a></p>
+            <p><a href="#bestelling">Bestelling</a></p>
           </span>
         </div>
       </div>
     </div>
     <div class="inline-block my-6 md:m-20 md:flex-1">
-        <h3>Algemeen</h3>
-         <div>
-            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
-               <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Label One</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
-               <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Label Two</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-            <div class="tab w-full bg-gray-300 overflow-hidden rounded-lg my-4">
-               <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Label Three</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
+      <section id="artikel-retourneren">
+        <h3>Artikel Retourneren</h3>
+        <div>
+          <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+            <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Hoeveel dagen heb ik de tijd om mijn product te retourneren?</label>
+            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+               <p class="p-5">Je kan jouw product binnen 30 dagen terugsturen nadat je het hebt ontvangen.</p>
             </div>
          </div>
-      </div>
+         <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+            <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Ik heb nog geen terugstorting van mijn retour ontvangen?</label>
+            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+               <p class="p-5">Als je na 10 dagen nog geen e-mail hebt ontvangen dat wij je retour hebben verwerkt, neem dan contact op. Heb je wel een e-mail ontvangen dat je retour is verwerkt, dan staat het geld binnen uiterlijk 5 werkdagen op je rekening.</p>
+            </div>
+         </div>
+        </div>
+      </section>
+      <section id="defect-product">
+        <h3>Defect product</h3>
+        <div>
+          <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+             <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
+             <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Ik heb een defect product. Wat moet ik nu doen?</label>
+             <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                <p class="p-5">verwijzing mail chatbox</p>
+             </div>
+          </div>
+        </div>
+      </section>
+      <section id="bezorging">
+        <h3>Bezorging</h3>
+        <div>
+          <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+             <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
+             <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Hoe kan ik mijn bestelling opvolgen?</label>
+             <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+                <p class="p-5">Wij sturen u de verzendingsgegevens zodra het trackingnummer aan de bestelling is toegekend en laten u weten welke artikelen ons magazijn hebben verlaten.</p>
+             </div>
+          </div>
+          <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+            <input class="absolute opacity-0" id="tab-multi-five" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Wat is de levertijd van mijn bestelling?</label>
+            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+               <p class="p-5">verwijzing mail chatbox</p>
+            </div>
+         </div>
+        </div>
+      </section>
+      <section id="bestelling">
+        <h3>Bestelling</h3>
+        <div>
+          <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+            <input class="absolute opacity-0" id="tab-multi-six" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">Hoe kan ik mijn bestelling aanpassen of annuleren?</label>
+            <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+               <p class="p-5">Je kan je product aanpassen of annuleren als de bestelling nog niet is verzonden.</p>
+            </div>
+         </div>
+         <div class="tab w-full bg-gray-100 overflow-hidden rounded-lg my-4">
+           <input class="absolute opacity-0" id="tab-multi-seven" type="checkbox" name="tabs">
+           <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-seven">Kan ik ook achteraf betalen?</label>
+           <div class="tab-content overflow-hidden bg-gray-100 leading-normal">
+              <p class="p-5">verwijzing mail chatbox</p>
+           </div>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
 
