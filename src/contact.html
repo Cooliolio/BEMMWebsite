@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
-    <link href="/src/css/style.css?v=11" rel="stylesheet" />
+    <link href="/src/css/style.css?v=12" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Contact</title>
@@ -16,7 +16,7 @@
   <body class="font-dm-sans w-full">
     <!-- Nav Bar -->
     <nav class="bg-grey text-white py-5 px-6 sm:py-8 sm:pl-24 md:bg-darkgrey">
-      <div">
+      <div>
         <div class="flex justify-between items-center">
           <a href="/" class="flex items-center">
             <img
@@ -43,6 +43,9 @@
               <li class="mt-2 sm:mx-5 sm:mt-0">
                 <a href="reviews.html">Reviews</a>
               </li>
+              <li class="mt-2 sm:mx-5 sm:mt-0">
+                <a href="FAQ.html">FAQ</a>
+              </li>
               <!-- <li><button class=" bg-white text-black rounded-full px-6 py-3 font-bold ">Chat met ons</button></li> -->
             </ul>
           </div>
@@ -68,7 +71,7 @@
                     stroke-width: 20;
                     stroke-miterlimit: 10;
                   }
-
+  
                   .st1 {
                     fill: none;
                     stroke: #48ea9c;
@@ -101,12 +104,27 @@
                 <div class="text-xl m-2 py-4">Contact</div>
               </a>
             </li>
+            <li>
+              <a href="verdeelpunten.html">
+                <div class="text-xl m-2 py-4">Verdeelpunten</div>
+              </a>
+            </li>
+            <li>
+              <a href="reviews.html">
+                <div class="text-xl m-2 py-4">Reviews</div>
+              </a>
+            </li>
+            <li>
+              <a href="FAQ.html">
+                <div class="text-xl m-2 py-4">FAQ</div>
+              </a>
+            </li>
           </ul>
         </div>
         <script>
           const btn = document.querySelector("button.mobile-menu-button");
           const menu = document.querySelector(".mobile-menu");
-
+  
           btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
           });
@@ -115,7 +133,7 @@
     </nav>
 
     <!-- Photo Header -->
-    <header class="bg-aboutus-cover text-white">
+    <header class="bg-darkgrey text-white">
       <div class="bg-darkgrey/50 w-full px-8 pt-36 pb-12 sm:px-24 sm:py-52">
         <h2>Contact</h2>
         <p class="lg:mr-96">
@@ -239,25 +257,22 @@
           <h3 class="text-2xl mb-6">Sitemap</h3>
           <div class="flex flex-col sm:flex-row sm:flex-wrap">
             <div class="w-1/2 mb-4">
-              <a href="#">Merken</a>
-            </div>
-            <div class="w-1/2 mb-4">
-              <a href="#">Verdeelpunten</a>
+              <a href="brands.html">Merken</a>
             </div>
             <div class="w-1/2 mb-4">
               <a href="aboutus.html">Over ons</a>
             </div>
             <div class="w-1/2 mb-4">
-              <a href="#">Contact</a>
+              <a href="contact.html">Contact</a>
             </div>
             <div class="w-1/2 mb-4">
-              <a href="#">Reviews</a>
+              <a href="reviews.html">Reviews</a>
             </div>
             <div class="w-1/2 mb-4">
-              <a href="#">Nieuws</a>
+              <a href="verdeelpunten.html">Verdeelpunten</a>
             </div>
             <div class="w-1/2 mb-4">
-              <a href="#">Veelgestelde vragen</a>
+              <a href="FAQ.html">FAQ</a>
             </div>
           </div>
         </div>
