@@ -1627,6 +1627,11 @@ h3 {
     padding-right: 20rem;
   }
 
+  .lg\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .lg\:pt-28 {
     padding-top: 7rem;
   }
