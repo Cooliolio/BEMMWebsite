@@ -1450,6 +1450,16 @@ h3 {
     padding-bottom: 1.5rem;
   }
 
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .sm\:pl-24 {
     padding-left: 6rem;
   }
@@ -1468,6 +1478,10 @@ h3 {
 
   .sm\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .sm\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .sm\:text-5xl {
