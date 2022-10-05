@@ -19,6 +19,9 @@ module.exports = {
           "url('/src/assets/images/backgrounds/aboutus-cover.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
+      screens: {
+        tablet: "820px",
+      },
     },
   },
   plugins: [],
