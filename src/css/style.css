@@ -608,6 +608,12 @@ h3 {
   }
 }
 
+@media (min-width: 820px) {
+  .container {
+    max-width: 820px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -1657,5 +1663,15 @@ h3 {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 820px) {
+  .tablet\:flex {
+    display: flex;
+  }
+
+  .tablet\:hidden {
+    display: none;
   }
 }
